@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 0.2fr 1fr;
+    height: 100vh;
+}
+
+.mainMenu {
+    background-color: #0A632D;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.intro {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url('./image/intro.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 667px;
+}
+
+.introBackground {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.introText {
+    color: white;
+    font-style: italic;
+    font-size: 36px;
+    margin-bottom: 44px;
+}
+
+.introButton {
+    background-color:#0E7838;
+    padding: 12px;
+    color: white;
+    border: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainLogo {
+    color: white;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 65px;
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+}
+
+.mainMenuElement {
+    padding: 20px 0 20px 20px;
+    transition: 0.5s;
+    display: flex;
+}
+
+.mainMenuElement:first-child {
+    background-color: #0E7838;
+}
+
+.mainMenuElement:hover {
+    background-color: #0e6b33;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menuTitle {
+    font-size: 36px;
+    
+}
